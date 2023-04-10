@@ -9,6 +9,9 @@ const MainBody = () => {
        <option value="Completed">Completed</option>
        <option value="Incompleted">Incompleted</option>
      </select>
+     <div className='border w-[300px] md:w-[780px] h-[90px] mx-auto mt-3 bg-[#ECEDF6] rounded-xl flex items-center justify-center'>
+     <p className=' font-bold text-lg border text-[#585858] bg-[#DEDFE1] max-w-[200px] rounded-xl text-center py-1 px-2'>No Todos</p>
+     </div>
     </div>
   )
 }
