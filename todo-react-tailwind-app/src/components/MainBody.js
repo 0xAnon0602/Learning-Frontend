@@ -1,6 +1,6 @@
 import  React,{useState,useEffect} from 'react'
-import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';
+// import IconButton from '@mui/material/IconButton';
+// import DeleteIcon from '@mui/icons-material/Delete';
 
 const MainBody = () => {
 
@@ -32,9 +32,9 @@ const renderTodo  = () => {
     allItems.push(
     <div className='border bg-white rounded-lg mt-2 mb-2 flex flex-row items-center'>
     <span className='w-[730px] h-[55px] py-4 indent-2  '>{element['title']}</span>
-    <IconButton aria-label="delete" size="small">
+    {/* <IconButton aria-label="delete" size="small">
     <DeleteIcon fontSize="small" onClick={(x)=>{console.log(x.target.value)}}/>
-    </IconButton>    
+    </IconButton>     */}
     </div>
     )
   
