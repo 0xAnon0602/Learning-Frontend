@@ -26,7 +26,9 @@ const renderTodo  = () => {
 
   var allItems = []
 
-  todoItems.forEach(element => {
+
+  for(var element of todoItems){
+
     allItems.push(
     <div className='border bg-white rounded-lg mt-2 mb-2 flex flex-row items-center'>
     <span className='w-[730px] h-[55px] py-4 indent-2  '>{element['title']}</span>
@@ -35,7 +37,8 @@ const renderTodo  = () => {
     </IconButton>    
     </div>
     )
-  });
+  
+  };
 
   if(allItems.length===0){
     allItems.push(
@@ -69,21 +72,6 @@ const submitNewData = () => {
        <option value="Completed">Completed</option>
        <option value="Incompleted">Incompleted</option>
      </select>
-
-     {/* <div className='border w-[300px] md:w-[780px] h-[180px] mx-auto mt-3 bg-[#ECEDF6] rounded-xl flex flex-col items-center justify-center'>
-     {todoItems.length===0 ? 
-     <p className=' font-bold text-lg border text-[#585858] bg-[#DEDFE1] max-w-[200px] rounded-xl text-center py-1 px-2'>No Todos</p>
-      :
-      <>
-     <div className='border bg-white rounded-lg'>
-     <p className='flex w-[750px] h-[55px] py-2 indent-2'>singh</p>
-     </div>
-     <div className='border bg-white rounded-lg mt-3'>
-     <p className='flex w-[750px] h-[55px] py-2 indent-2'>c</p>
-     </div>
-     </>
-     }
-     </div>  */}
 
      <div>{renderTodo()}</div>
 
