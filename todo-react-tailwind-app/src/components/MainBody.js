@@ -1,6 +1,4 @@
 import  React,{useState,useEffect} from 'react'
-// import IconButton from '@mui/material/IconButton';
-// import DeleteIcon from '@mui/icons-material/Delete';
 
 const MainBody = () => {
 
@@ -32,9 +30,6 @@ const renderTodo  = () => {
     allItems.push(
     <div className='border bg-white rounded-lg mt-2 mb-2 flex flex-row items-center'>
     <span className='w-[730px] h-[55px] py-4 indent-2  '>{element['title']}</span>
-    {/* <IconButton aria-label="delete" size="small">
-    <DeleteIcon fontSize="small" onClick={(x)=>{console.log(x.target.value)}}/>
-    </IconButton>     */}
     </div>
     )
   
@@ -89,9 +84,9 @@ const submitNewData = () => {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button> 
-     <p className='mt-3 font-bold text-l ml-4 text-[#646681]'>TITLE</p>
+     <p className='mt-1 font-bold text-l ml-4 text-[#646681]'>TITLE</p>
      <input type="text" className="p-3 input input-bordered input-accent  w-full max-w-xs mt-2 h-[50px] ml-4 required" onChange={(x)=>{setNewTitle(x.target.value)}}/>
-     <p className='mt-4 font-bold text-l ml-4 text-[#646681]'>STATUS</p>
+     <p className='mt-1 font-bold text-l ml-4 text-[#646681]'>STATUS</p>
   
      <select className='p-3 input input-bordered input-accent  w-full max-w-xs mt-2 h-[50px] ml-4 bg-white required' onChange={(y)=>{setNewType(y.target.value)}}>
        <option value="Completed">Completed</option>
